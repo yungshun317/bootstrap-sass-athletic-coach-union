@@ -12,10 +12,14 @@ module.exports = {
     },
     devtool: "source-map",
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        static: path.join(__dirname, "dist"),
         compress: true,
         port: 9000,
-        open: "google-chrome"
+        open: {
+            app: {
+                name: "google-chrome"
+            }
+        }
     },
     module: {
         rules: [{
