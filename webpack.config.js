@@ -1,4 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require("path");
 
 module.exports = {
@@ -8,7 +10,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
-        sourceMapFilename: "bundle.map"
     },
     devtool: "source-map",
     devServer: {
@@ -24,12 +25,23 @@ module.exports = {
     module: {
         rules: [{
             test: /\.s[ac]ss$/i,
-            use: ["style-loader", "css-loader", "sass-loader"]
+            use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        },{
+            test: /\.(jpg|png|woff|woff2|eot|ttf|svg|glb|gltf|otf)$/,
+            use: ["url-loader"]
         }]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "public", "index.html")
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: "public/img", to: "img" }
+            ]
         })
     ]
 }
