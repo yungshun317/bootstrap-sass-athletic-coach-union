@@ -399,6 +399,20 @@ fieldset {
   margin: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .row {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .one {
+    order: 2;
+  }
+
+  .two {
+    order: 1;
+  }
+}
 /**
  * Bootstrap Default in _variables.scss
  * $font-weight-normal: 400;
