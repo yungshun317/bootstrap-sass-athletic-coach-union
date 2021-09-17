@@ -75,3 +75,9 @@ fieldset {
     display: none;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .responsive-nav-item {
+    display: block;
+  }
+}

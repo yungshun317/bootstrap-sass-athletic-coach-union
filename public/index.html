@@ -4,6 +4,7 @@
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>台中市體育運動教練職業工會</title>
     <link rel="shortcut icon" href="img/logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
@@ -11,7 +12,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color:rgba(250,190,0,0.8);z-index:100">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top" data-aos="fade-down" style="background-color:rgba(250,190,0,0.8);z-index:100">
 
         <a class="navbar-brand" href="#" style="padding-bottom:0"><h6 class="responsive-font">台中市體育運動教練職業工會</h6></a>
         <!-- Image Logo -->
@@ -71,7 +72,7 @@
     <div id="about" style="background-image:url('img/bg-1.jpg');background-size: cover;padding-top:40px;margin-top:80px">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-12 d-flex align-items-center">
+                <div class="col-md-5 col-sm-12 d-flex align-items-center" data-aos="fade-right" >
                     <div>
                         <img src="img/logo.svg" style="width:128px" />
                         <h5 style="display:block;margin-block-start:16px;margin-block-end:16px">台中市體育運動教練職業工會</h5>
@@ -98,7 +99,7 @@
                         <img src="img/line-drive-S66EMC4.png" style="width:100%" />
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 d-flex align-items-center two">
+                <div class="col-md-5 col-sm-12 d-flex align-items-center two" data-aos="fade-left" data-aos-anchor="#news">
                     <div>
                         <h5 style="display:block;margin-block-start:16px;margin-block-end:16px">最新消息</h5>
                         <h6 style="display:block;margin-block-start:16px;color:rgba(250,190,0,1);font-family: 'Montserrat', sans-serif;font-weight:500">Hot News</h6>
@@ -114,7 +115,7 @@
     <div id="info" style="background-image:url('img/bg-3.jpg');background-size: cover;padding-top:40px">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-12 d-flex align-items-center">
+                <div class="col-md-5 col-sm-12 d-flex align-items-center" data-aos="fade-right" data-aos-anchor="#info">
                     <div>
                         <h5 style="display:block;margin-block-start:16px;margin-block-end:16px">入會資格</h5>
                         <h6 style="display:block;margin-block-start:16px;color:rgba(250,190,0,1);font-family: 'Montserrat', sans-serif;font-weight:500">Qualification</h6>
@@ -134,7 +135,7 @@
             </div>
         </div>
     </div>
-    <div style="background-image:url('img/bg-5.jpg');background-size: cover;padding-top:40px;padding-bottom:40px">
+    <div id="trigger-left" style="background-image:url('img/bg-5.jpg');background-size: cover;padding-top:40px;padding-bottom:40px">
         <div class="container">
         <div class="row">
             <div class="col-md-7 col-sm-12 one d-flex align-items-end">
@@ -142,7 +143,7 @@
                     <img src="img/asian-woman-practicing-yoga-NHY8UPT.png" style="width:100%" />
                 </div>
             </div>
-            <div class="col-md-5 col-sm-12 d-flex align-items-center two">
+            <div class="col-md-5 col-sm-12 d-flex align-items-center two" data-aos="fade-left" data-aos-anchor="#trigger-left">
                 <div>
                     <h5 style="display:block;margin-block-start:16px;margin-block-end:16px">入會方式</h5>
                     <h6 style="display:block;margin-block-start:16px;color:rgba(250,190,0,1);font-family: 'Montserrat', sans-serif;font-weight:500">Process</h6>
@@ -168,7 +169,7 @@
     <div id="contact" style="background-color:rgba(250,190,0,0.8);">
         <div class="container">
         <div class="row" style="padding-top:40px;padding-bottom:40px">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-up" >
                 <div>
                     <h5 style="display:block;margin-block-start:16px;margin-block-end:16px;color:rgba(6,17,23,1)">台中市體育運動教練職業工會</h5>
                     <h6 style="display:block;margin-block-start:16px;margin-block-end:16px;color:rgba(6,17,23,1)">Taichung Atheltic Coach Union</h6>
@@ -185,5 +186,13 @@
         </div>
     </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out-back'
+        });
+    </script>
 </body>
 </html>
